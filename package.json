@@ -12,8 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
     "@babel/core": "^7.12.9",
     "@babel/plugin-external-helpers": "^7.12.1",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
@@ -22,6 +20,8 @@
     "@babel/preset-env": "^7.12.7",
     "@babel/preset-react": "^7.12.7",
     "@babel/preset-typescript": "^7.12.7",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "babel-loader": "^8.2.2",
@@ -42,7 +42,25 @@
   },
   "dependencies": {
     "botframework-webchat": "^4.11.0",
+    "core-js": "^3.8.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-app-polyfill": "^2.0.0",
+    "react-dom": "^17.0.1",
+    "regenerator-runtime": "^0.13.7",
+    "url-search-params-polyfill": "^8.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "ie >= 11",
+      "not op_mini all"
+    ],
+    "development": [
+      ">0.2%",
+      "not dead",
+      "ie >= 11",
+      "not op_mini all"
+    ]
   }
 }

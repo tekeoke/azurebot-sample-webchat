@@ -1,8 +1,13 @@
+html,
 body {
-  margin: 0px;
-  padding: 0px;
+  height: 100%;
+}
+body {
+  margin: 0;
 }
 
-p {
-  color: #f05e5e;
+.web-chat {
+  overflow: hidden;
+  letter-spacing: 0.04em;
+  height: 100%;
 }

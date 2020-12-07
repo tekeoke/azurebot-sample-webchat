@@ -1,12 +1,21 @@
-import React from 'react'
-import ReactWebChat, { createDirectLine } from 'botframework-webchat'
+import * as React from 'react'
+import { useEffect, useState, useMemo } from 'react'
+import ReactWebChat from 'botframework-webchat'
+import { createDirectLine } from 'botframework-webchat/lib/index-es5'
 import './index.css'
 
-const App: React.FC = () => {
-  const TOKEN = 'CVkrtsgJAU0.GGLsFawOFPToEXKmPCan4vwakjKOXYioB2bu_nTRBvQ'
+const App = (): JSX.Element => {
+  const directLine = useMemo(
+    () =>
+      createDirectLine({
+        token: 'your_token',
+      }),
+    []
+  )
+
   return (
-    <div>
-      <ReactWebChat directLine={createDirectLine({ token: TOKEN })} />
+    <div style={{height: '560px'}}>
+      <ReactWebChat directLine={directLine} />
     </div>
   )
 }
